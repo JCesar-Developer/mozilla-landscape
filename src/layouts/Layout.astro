@@ -1,0 +1,30 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props { title: string; }
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Mozilla Landscape made with astro by Julio César Developer, see all my projects in jcesar-developer.com" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="/images/firefox.png" type="image/x-icon">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body class="dark:bg-slate-800 dark:text-white relative">
+    <Header/>
+    <main class="pt-32 md:pt-0">
+      <div class="flex flex-col gap-y-36 lg:gap-y-48">
+        <slot />
+      </div>
+    </main>
+    <Footer/>
+	</body>
+
+</html>

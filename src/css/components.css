@@ -1,0 +1,16 @@
+@layer components {
+  /* Containers */
+  .thin-container {
+    @apply container mx-auto px-6;
+  }
+  /* Buttons */
+  .nav-btn {
+    @apply tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white;
+  }
+  .hamburger-btn div:first-child {
+    @apply rotate-45 translate-y-1.5;
+  }
+  .hamburger-btn div:last-child {
+    @apply -rotate-45 -translate-y-1;
+  }
+}

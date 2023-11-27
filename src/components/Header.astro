@@ -1,0 +1,26 @@
+---
+import NavBar from '../components/NavBar.astro';
+---
+
+<header class="
+z-20 bg-white dark:bg-slate-800 shadow-lg fixed inset-x-0 border-bottom
+md:shadow-none md:static md:border-none">
+  <div class="thin-container py-6">
+    <div class="flex flex-row justify-between items-center">
+    
+      <!-- logo -->
+      <a href="#" class="flex flex-row items-center gap-4 z-20">
+        <img
+          src="/images/firefox.png"
+          alt="Logo"
+          class="w-12 h-12"
+        >
+        <h1 class="text-3xl md:text-4xl"><strong>Firefox</strong> browser</h1>
+      </a>
+
+      <!-- nav -->
+      <NavBar />
+
+    </div>
+  </div>
+</header>

@@ -1,0 +1,10 @@
+---
+const { image, text, device } = Astro.props;
+---
+<button class="bg-black active:bg-gray-800 transition p-4 w-60 flex flex-row align-middle gap-4 rounded-lg">
+  <img src={image} class="h-10 w-10"/>
+  <div class="text-start">
+    <p class="text-gray-400 text-xs">{text}</p>
+    <h3 class="text-white text-xl font-semibold">{device}</h3>
+  </div>
+</button>

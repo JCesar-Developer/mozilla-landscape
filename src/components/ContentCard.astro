@@ -1,0 +1,32 @@
+---
+const { title, description, image, imagePosition } = Astro.props;
+---
+
+<article class="flex flex-col lg:flex-row justify-between items-center">
+
+  <div class="text-start order-2 mt-12 lg:mt-0">
+    <div 
+    class:list={[
+      'w-full',
+      {
+        'lg:pl-20': imagePosition === 'left',
+        'lg:pr-20': imagePosition === 'right',
+      }
+    ]}>
+      <h3 class="text-4xl font-semibold">{ title }</h3>
+      <p class="mt-4 text-lg leading-relaxed">{ description }</p>
+    </div>
+  </div>
+  
+  <figure 
+  class:list={[
+    'order-1 lg:w-full lg:max-w-lg',
+    {
+      'lg:order-1': imagePosition === 'left',
+      'lg:order-3': imagePosition === 'right',
+    }
+  ]}>
+    <img src={ image } alt={ title } class="w-full"/>
+  </figure>
+
+</article>

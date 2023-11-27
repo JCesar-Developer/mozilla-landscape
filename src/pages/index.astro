@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InstallButton from '../components/InstallButton.astro'
+import ContentCard from '../components/ContentCard.astro';
+---
+
+<Layout title="Mozilla Firefox">
+  
+  <!-- Hero -->
+  <section class="thin-container mt-10 relative md:mt-20 md:flex md:flex-row md:justify-between md:items-center">
+    
+    <!-- article -->
+    <article class="text-center w-full md:w-1/2 md:text-start lg:w-7/12">
+      <div class="w-full md:pr-8 lg:w-10/12">
+        <h1 class="text-5xl font-semibold md:text-6xl">
+          Mozilla Firefox, the open-source web browser
+        </h1>
+        <p class="leading-relaxed text-lg mt-8">
+          Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation.
+        </p>
+      </div>
+
+      <!-- buttons -->
+      <div class="flex flex-col items-center lg:flex-row md:items-start mt-8 gap-4">
+        <InstallButton image="images/logo_windows.png" text="INSTALAR EN" device="Windows" />
+        <InstallButton image="images/apple-logo.png" text="INSTALAR EN" device="Max Os" />
+      </div>
+    </article>
+    
+    <!-- image -->
+    <figure class="hidden md:block md:w-1/2 lg:w-5/12 lg:max-w-xl">
+      <img src="images/image_hero1.png" alt="Hero image, about how to use the web browser"
+      class="w-full">
+    </figure>
+    <img src="images/image_hero2.svg" alt="Hero background" 
+    class="hidden md:block absolute right-0 -z-10 md:w-[55%] lg:w-[45%] 2xl:w-[42.5%]">
+
+  </section>
+
+  <!-- Description -->
+  <section class="thin-container">
+    <h2 class="text-4xl md:text-5xl font-semibold text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia quia commodi!
+    </h2>
+  </section>
+
+  <!-- Contents -->
+  <section class="thin-container flex flex-col gap-24">
+    <ContentCard 
+      title="Lorem ipsum dolor sit amet consectetur adipisicing."
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit veritatis in, atque molestiae ex eligendi, beatae voluptates velit tenetur qui, sed quam quidem temporibus."
+      image="images/image_content1.svg"
+      imagePosition="right"
+    />
+    <ContentCard 
+      title="Lorem ipsum dolor sit amet consectetur adipisicing."
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit veritatis in, atque molestiae ex eligendi, beatae voluptates velit tenetur qui, sed quam quidem temporibus."
+      image="images/image_content2.svg"
+      imagePosition="left"
+    />
+    <ContentCard 
+      title="Lorem ipsum dolor sit amet consectetur adipisicing."
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit veritatis in, atque molestiae ex eligendi, beatae voluptates velit tenetur qui, sed quam quidem temporibus."
+      image="images/image_content3.png"
+      imagePosition="right"
+    />
+  </section>
+
+  <!-- Examples -->
+  <section class="thin-container">
+
+    <hgroup class="w-full text-center">
+      <h1 class="text-5xl md:text-6xl font-bold">Pitchfork Wickstarter Taxidermy</h1>
+    </hgroup>
+
+    <section class="mt-24 md:mt-48 flex flex-col items-center">
+      <!-- image -->
+      <figure class="relative w-full">
+        <img src="images/image_info1.png" alt="" class="w-4/5 md:w-8/12 mx-auto mb-5 md:mb-20 rounded">
+        <div>
+          <img src="images/image_infobg.svg" alt="" class="absolute -z-10 bottom-0">
+        </div>
+      </figure>
+
+      <!-- descriptions -->
+      <section class="flex flex-col md:flex-row w-4/5 md:w-8/12 mt-8 md:mt-0 gap-12">
+        <article>
+          <h3 class="text-4xl font-semibold">Lorem ipsum dolor sit amet.</h3>
+          <p class="mt-4 text-lg leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis explicabo eveniet. Voluptate reprehenderit ipsam sapiente quisquam, porro, maiores reiciendis odio sunt cupiditate ullam beatae quae recusandae! Deserunt, magni ipsam.</p>
+        </article>
+
+        <article>
+          <h3 class="text-4xl font-semibold">Lorem ipsum dolor sit amet.</h3>
+          <p class="mt-4 text-lg leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis explicabo eveniet. Voluptate reprehenderit ipsam sapiente quisquam, porro, maiores reiciendis odio sunt cupiditate ullam beatae quae recusandae! Deserunt, magni ipsam.</p>
+        </article>
+
+        <article>
+          <h3 class="text-4xl font-semibold">Lorem ipsum dolor sit amet.</h3>
+          <p class="mt-4 text-lg leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis explicabo eveniet. Voluptate reprehenderit ipsam sapiente quisquam, porro, maiores reiciendis odio sunt cupiditate ullam beatae quae recusandae! Deserunt, magni ipsam.</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="mt-24 flex flex-col md:flex-row gap-8 items-center">
+      <article class="md:w-1/2">
+        <figure class="max-w-md m-auto">
+          <img src="images/image_info2.png" alt="Image about info from mozilla firefox" class="h-full">
+        </figure>
+        <div class="text-start mt-4">
+          <h3 class="text-3xl md:text-center md:text-4xl font-semibold">Lorem ipsum dolor sit.</h3>
+          <p class="mt-2 text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor autem dolorum quod magni quos sapiente, modi, deleniti necessitatibus quasi aliquam eligendi saepe quia tempore eius harum libero impedit veritatis.</p>
+        </div>
+      </article>
+      <article class="md:w-1/2">
+        <figure class="max-w-lg m-auto">
+          <img src="images/image_info3.png" alt="Image about info from mozilla firefox">
+        </figure>
+        <div class="text-start mt-4">
+          <h3 class="text-3xl md:text-center md:text-4xl font-semibold">Lorem ipsum dolor sit.</h3>
+          <p class="mt-2 text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor autem dolorum quod magni quos sapiente, modi, deleniti necessitatibus quasi aliquam eligendi saepe quia tempore eius harum libero impedit veritatis.</p>
+        </div>
+      </article>
+    </section>
+
+  </section>
+
+  <!-- Download -->
+  <section class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700">
+    <div class="w-full h-full py-24 px-12 flex flex-col md:flex-row items-center">
+      <figure class="hidden md:block md:w-1/2">
+        <img src="/images/firefox.png" alt="Firefox logo" class="mx-auto">
+      </figure>
+      
+      <div class="md:w-1/2 flex flex-col items-center md:items-start">
+        <h1 class="text-white text-center md:text-start text-5xl md:text-6xl font-semibold">
+          Disponible para moviles
+        </h1>
+        <div class="flex flex-col md:flex-row items-center gap-4 mt-8">
+          <InstallButton image="images/logo_windows.png" text="DISPONIBLE EN" device="Google Play" />
+          <InstallButton image="images/apple-logo.png" text="Consiguelo en el" device="App Store" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
